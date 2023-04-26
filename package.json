@@ -1,0 +1,16 @@
+{
+  "name": "battleships",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vite": "^4.3.2",
+    "vitest": "^0.30.1"
+  }
+}
