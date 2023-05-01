@@ -1,5 +1,5 @@
-const Ship = (length) => {
-  const hitLocations = Array(length).fill(0)
+const Ship = (length, location) => {
+  const hitLocations = new Array(length).fill(false)
 
   const hit = (position) => {
     hitLocations[position] = 'X'
