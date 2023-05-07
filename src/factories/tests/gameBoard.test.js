@@ -37,18 +37,20 @@ it('should place a horizontal ship on the board', () => {
   myGameBoard.placeShip(carrier, 0, 0, true)
 
   expect(myGameBoard.board[0][0]).toEqual(carrier)
-  expect(myGameBoard.board[0][1]).toEqual(carrier)
-  expect(myGameBoard.board[0][2]).toEqual(carrier)
-  expect(myGameBoard.board[0][3]).toEqual(carrier)
-  expect(myGameBoard.board[0][4]).toEqual(carrier)
+  expect(myGameBoard.board[1][0]).toEqual(carrier)
+  expect(myGameBoard.board[2][0]).toEqual(carrier)
+  expect(myGameBoard.board[3][0]).toEqual(carrier)
+  expect(myGameBoard.board[4][0]).toEqual(carrier)
 })
 
 it('Should place a vertical ship on the gameboard', () => {
   myGameBoard.placeShip(carrier, 2, 3, false)
 
   expect(myGameBoard.board[2][3]).toEqual(carrier)
-  expect(myGameBoard.board[3][3]).toEqual(carrier)
-  expect(myGameBoard.board[4][3]).toEqual(carrier)
+  expect(myGameBoard.board[2][4]).toEqual(carrier)
+  expect(myGameBoard.board[2][5]).toEqual(carrier)
+  expect(myGameBoard.board[2][6]).toEqual(carrier)
+  expect(myGameBoard.board[2][7]).toEqual(carrier)
 })
 
 it('should place a ship vertically on the gameboard', () => {
@@ -56,5 +58,5 @@ it('should place a ship vertically on the gameboard', () => {
   myGameBoard.placeShip(destroyer, 2, 3, false)
 
   expect(myGameBoard.board[2][3]).toEqual(destroyer)
-  expect(myGameBoard.board[3][3]).toEqual(destroyer)
+  expect(myGameBoard.board[2][4]).toEqual(destroyer)
 })
